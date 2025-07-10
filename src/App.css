@@ -20,8 +20,57 @@ body {
 
 .App {
   width: 100%;
-  max-width: 500px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.tab-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.tab-button.active {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.app-content {
+  min-height: 400px;
 }
 
 /* Add some floating particles for visual appeal */
@@ -54,13 +103,42 @@ body {
 }
 
 /* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+  
+  .App {
+    max-width: 100%;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .tab-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 200px;
+  }
+}
+
 @media (max-width: 480px) {
   body {
     padding: 10px;
   }
   
-  .App {
-    max-width: 100%;
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .tab-button {
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
 
