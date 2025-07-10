@@ -11,6 +11,7 @@ const Calculator = () => {
     setDisplay('0')
     setPreviousValue(null)
     setOperation(null)
+
     setWaitingForOperand(false)
   }
 
@@ -124,7 +125,7 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="calculator-header">
-        <h1>Calculator</h1>
+        <h1>Calculator + Graph </h1>
       </div>
       
       <div className="display">
