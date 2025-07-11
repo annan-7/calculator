@@ -7,8 +7,7 @@ import {
   LineElement,
   Title,
   Tooltip,
-  Legend,
-  Grid
+  Legend
 } from 'chart.js'
 import { Line } from 'react-chartjs-2'
 import './FunctionGraph.css'
@@ -20,8 +19,7 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend,
-  Grid
+  Legend
 )
 
 const FunctionGraph = () => {
