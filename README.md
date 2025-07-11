@@ -7,10 +7,13 @@ A React application featuring a calculator and function grapher built with moder
 ### 🧮 Calculator
 - Basic arithmetic operations (addition, subtraction, multiplication, division)
 - Percentage calculations
-- Sign change functionality
+- Sign change functionality   
 - Clean, modern interface with responsive design
 
 ### 📈 Function Grapher
+
+
+
 - Plot mathematical functions using Chart.js
 - Support for various mathematical functions and operators
 - Adjustable x-axis range
