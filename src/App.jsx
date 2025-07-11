@@ -21,7 +21,7 @@ function App() {
             className={`tab-button ${activeTab === 'graph' ? 'active' : ''}`}
             onClick={() => setActiveTab('graph')}
           >
-            Function Grapher
+            Function Grapher BY ANNAN
           </button>
         </div>
       </div>
